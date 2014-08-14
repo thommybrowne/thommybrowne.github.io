@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Karma:400,300,700);
+
+html, body {
+    width: 100%; height: 100%;
+}
+
+body {
+    background: url(../i/tileable-cloud-patterns-2.jpg), url(../i/landscape.jpg) no-repeat center center fixed;
+    -webkit-background-size: auto,cover;
+    background-size: auto,cover;
+  
+    -webkit-background-blend-mode: multiply, normal;
+    background-blend-mode: multiply, normal;
+  
+    -webkit-animation: bgAnim 20s linear infinite;
+    animation: bgAnim 20s linear infinite;
+    position:relative;
+}
+
+h1, h2, h3, ul {
+    position:absolute;
+    color:white;
+    text-shadow:0 1px 2px #333;
+    margin:0;
+    padding:0;
+    font-family: 'Karma', sans-serif;
+}
+
+h1 {
+    top: 0;
+    left: 25px;
+    font-size: 2rem;
+    font-weight:800;
+}
+
+h2 {
+    top: 40px;
+    left: 25px;
+    font-size: 1rem;
+    font-weight:300;
+}
+
+h3 {
+    top: 66px;
+    left: 25px;
+    font-size: .85rem;
+    font-weight:300;
+}
+
+ul {
+    top:90px;
+    left: 25px;
+}
+
+ul > li {
+  list-style-type: none;
+  display:inline;
+  margin-right:10px;
+}
+
+ul > li > a { color:white; }
+ul > li > a:hover { color:LightSteelBlue; }
+
+#look-over-there {
+    background:url(../i/dudes-tree-layer.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:250px;
+    height:266px;
+}
+
+@keyframes bgAnim {
+  from {
+    background-position: 0px 0%, center center;
+  }
+  to {
+    background-position: -1024px 0%, center center;
+  }
+}
+
+@-webkit-keyframes bgAnim {
+  from {
+    background-position: 0px 0%, center center;
+  }
+  to {
+    background-position: -1024px 0%, center center;
+  }
+}
+
+@media only screen and (min-width:915px) {
+    h1 {
+        top:35px;
+        left:100px;
+        font-size:6rem;
+    }
+
+    h2 {
+        top: 145px;
+        left:100px;
+        font-size:2rem;
+    }
+
+    h3 {
+        top: 195px;
+        left:100px;
+        font-size:1rem;
+    }
+
+    ul {
+        top:235px;
+        left:100px;
+    }
+
+    #look-over-there {
+        background:url(../i/dudes-tree-layer.png) no-repeat;
+        position: absolute;
+        bottom:0;
+        right:0;
+        width:845px;
+        height:900px;
+    }
+}
